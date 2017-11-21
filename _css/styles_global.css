@@ -1,29 +1,51 @@
-/* styles_global.css - The global style sheet for my website.
- * Author:      Jamie-Rhys Edwards
- * Date:        2017-11-18
+/* styles_global.css - This is the global stylesheet for
+ * the website. This should be slightly improved from the
+ * previous one.
 */
 
-html, body {
+h1, h2, h3, p, head, body, header, main, footer, html, table, 
+th, tr, td, ul, li, a, nav {
     margin: 0;
     padding: 0;
     border: 0;
-    background-color: #595959;
 }
 
-h1, h2, p, nav a, ul, li, table {
+h1, h2, h3, nav a, ul, li, table, p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-    margin: 0;
+h1, h2, h3 {
+    padding: 10px;
+}
+
+h3 {
+    color: #47d147;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+li {
+    margin-left: 20px;
+}
+
+body {
+    background-color: #bababa;
+}
+
+img.logo {
+    display: block;
+    margin: auto;
+    max-width:100%;
+    width: auto;
+    height: auto;
 }
 
 nav {
-    background-color: #333333;
+    background-color: #333; /* dark grey */
     padding: 10px;
     padding-left: 0;
-    margin: 0px;
-    margin-bottom: 0;
 }
 
 nav a {
@@ -36,88 +58,70 @@ nav a {
 nav a:hover {
     background-color: #47d147;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 11px;
+}
+
+p {
+    text-align: justify;
+    padding: 10px;
+}
+
+p.mandy {
+    float: left;
+    background-color: #47d147;
+    margin-bottom: 10px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+p.mandy a {
+    color: #333;
+    text-decoration: none;
+}
+
+p.mandy a:hover {
+    color: #808080;
+}
+
+article p {
+    margin-bottom: 10px;
 }
 
 main {
     background-color: white;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0;
-    width: 70%;
-    border-right-color: #333333;
-    border-right-style: solid;
-}
-
-article {
-    margin: 0;
-}
-
-footer {
-    background-color: #47d147;
-    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     width: 70%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-right-color: #333333;
-    border-right-style: solid;
-    border-bottom-style: solid;
-}
-
-footer p {
-    margin: 0px;
-    padding: 5px;
-    text-align: center;
-}
-
-h1 {
-    color: #008000; /* darkish green */
-    margin: 0;
-    padding: 5px;
-    text-align: center;
-}
-
-h2 {
-    text-align: center;
-    padding: 5px;
-    margin: 0;
-}
-
-h3 {
-    font-family: Georgia, serif;
-    padding: 5px;
-}
-
-p {
-    padding: 10px;
-    margin: 0px;
-    text-align: justify;
+    min-width: 70%;
+    border-bottom: 3px solid black;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 table {
     border-collapse: collapse;
+    padding: 10px;
+    margin-bottom: 20px;
+    table-layout: fixed;
+    width: 100%;
+    min-width: 100%;
+    text-overflow: ellipsis;
 }
 
 th {
     background-color: #47d147;
     padding: 10px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align:left;
-    border: 1px solid #333333;
+    text-align: left;
+    border: 1px solid #333;
 }
 
 td {
-    border: 1px solid #333333;
+    border: 1px solid #333;
+    padding: 5px;
 }
 
 tr {
-    border: 1px solid #333333;
-    padding 10px;
-    text-align: center;
+    padding: 10px;
 }
 
 tr:nth-child(even) {
@@ -125,5 +129,18 @@ tr:nth-child(even) {
 }
 
 tr:hover {
-    background-color: #dddddd;
+    background-color:#dddddd;
+}
+
+footer {
+    background-color: #47d147;
+    margin: auto;
+    width: 70%;
+    border-radius: 25px;
+    border-bottom: 3px solid black;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 10px;
 }
